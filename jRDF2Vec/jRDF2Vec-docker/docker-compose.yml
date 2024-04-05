@@ -1,0 +1,12 @@
+services:
+  jrdf2vec:
+    image: jrdf2vec
+    container_name: jrdf2vec
+    stdin_open: true
+    tty: true
+    command: "/bin/bash"
+    ports:
+      - 1808:1808
+    volumes:
+      - ./data:/data
+      # - ./app:/app
