@@ -1,10 +1,5 @@
 # jRDF2Vec
 
-
-
-
-
-
 ## steps to generate jar and save it locally and test locally
 1. docker build -t jrdf2vec .
 2. docker-compose -f docker-compose.yml up
