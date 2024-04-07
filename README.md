@@ -38,4 +38,10 @@ jrdf2vec-local \
 15. check if the model.kv and vectors.txt file generated successfully.
 
 
-  
+# Generating a Vocabulary Text File
+
+16. java -jar jrdf2vec.jar -generateVocabularyFile walks/vectors.txt
+
+# Analyzing the Embedding Vocabulary
+
+17. java -jar ../../jar/jrdf2vec.jar -analyzeVocab sample_dbpedia_nt_file.nt /walks/model.kv

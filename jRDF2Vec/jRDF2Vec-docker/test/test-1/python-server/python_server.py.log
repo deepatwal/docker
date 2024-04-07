@@ -1,59 +1,10 @@
-2024-04-07 13:23:56,468 INFO:Received argument: 1808
-2024-04-07 13:23:56,468 INFO:Starting server using port 1808
-2024-04-07 13:23:56,468 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-04-07 14:48:56,284 INFO:Received argument: 1808
+2024-04-07 14:48:56,284 INFO:Starting server using port 1808
+2024-04-07 14:48:56,284 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:1808
-2024-04-07 13:23:56,468 INFO:[33mPress CTRL+C to quit[0m
-2024-04-07 13:24:05,819 INFO:127.0.0.1 - - [07/Apr/2024 13:24:05] "GET /melt_ml.html HTTP/1.1" 200 -
-2024-04-07 13:24:05,831 INFO:Sentences object (/home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker/test/test-1/./walks) initialized.
-2024-04-07 13:24:05,831 INFO:hs: 0
-2024-04-07 13:24:05,831 INFO:hs: 0
-2024-04-07 13:24:05,834 INFO:Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=200, alpha=0.025>', 'datetime': '2024-04-07T13:24:05.831456', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'created'}
-2024-04-07 13:24:05,834 INFO:Model object initialized. Building Vocabulary...
-2024-04-07 13:24:05,834 INFO:collecting all words and their counts
-2024-04-07 13:24:05,834 INFO:Directory detected.
-2024-04-07 13:24:05,835 INFO:Processing file: walk_file_0.txt.gz
-2024-04-07 13:24:05,835 INFO:Gzip file detected! Using gzip.open().
-2024-04-07 13:24:05,835 INFO:PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
-2024-04-07 13:24:05,836 INFO:collected 151 word types from a corpus of 7129 raw words and 1063 sentences
-2024-04-07 13:24:05,836 INFO:Creating a fresh vocabulary
-2024-04-07 13:24:05,836 INFO:Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 151 unique words (100.00% of original 151, drops 0)', 'datetime': '2024-04-07T13:24:05.836700', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'prepare_vocab'}
-2024-04-07 13:24:05,836 INFO:Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 7129 word corpus (100.00% of original 7129, drops 0)', 'datetime': '2024-04-07T13:24:05.836743', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'prepare_vocab'}
-2024-04-07 13:24:05,837 INFO:deleting the raw counts dictionary of 151 items
-2024-04-07 13:24:05,837 INFO:sample=0 downsamples 0 most-common words
-2024-04-07 13:24:05,837 INFO:Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 7129 word corpus (100.0%% of prior 7129)', 'datetime': '2024-04-07T13:24:05.837170', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'prepare_vocab'}
-2024-04-07 13:24:05,838 INFO:estimated required memory for 151 words and 200 dimensions: 317100 bytes
-2024-04-07 13:24:05,838 INFO:resetting layer weights
-2024-04-07 13:24:05,838 INFO:Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2024-04-07T13:24:05.838721', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'build_vocab'}
-2024-04-07 13:24:05,838 INFO:Vocabulary built. Training now...
-2024-04-07 13:24:05,838 INFO:Word2Vec lifecycle event {'msg': 'training model with 16 workers on 151 vocabulary and 200 features, using sg=1 hs=0 sample=0.0 negative=5 window=5 shrink_windows=True', 'datetime': '2024-04-07T13:24:05.838879', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'train'}
-2024-04-07 13:24:05,841 INFO:Directory detected.
-2024-04-07 13:24:05,842 INFO:Processing file: walk_file_0.txt.gz
-2024-04-07 13:24:05,842 INFO:Gzip file detected! Using gzip.open().
-2024-04-07 13:24:05,856 INFO:EPOCH 0: training on 7129 raw words (7129 effective words) took 0.0s, 478598 effective words/s
-2024-04-07 13:24:05,859 INFO:Directory detected.
-2024-04-07 13:24:05,859 INFO:Processing file: walk_file_0.txt.gz
-2024-04-07 13:24:05,859 INFO:Gzip file detected! Using gzip.open().
-2024-04-07 13:24:05,872 INFO:EPOCH 1: training on 7129 raw words (7129 effective words) took 0.0s, 541179 effective words/s
-2024-04-07 13:24:05,875 INFO:Directory detected.
-2024-04-07 13:24:05,875 INFO:Processing file: walk_file_0.txt.gz
-2024-04-07 13:24:05,875 INFO:Gzip file detected! Using gzip.open().
-2024-04-07 13:24:05,887 INFO:EPOCH 2: training on 7129 raw words (7129 effective words) took 0.0s, 571707 effective words/s
-2024-04-07 13:24:05,890 INFO:Directory detected.
-2024-04-07 13:24:05,890 INFO:Processing file: walk_file_0.txt.gz
-2024-04-07 13:24:05,890 INFO:Gzip file detected! Using gzip.open().
-2024-04-07 13:24:05,902 INFO:EPOCH 3: training on 7129 raw words (7129 effective words) took 0.0s, 599696 effective words/s
-2024-04-07 13:24:05,904 INFO:Directory detected.
-2024-04-07 13:24:05,904 INFO:Processing file: walk_file_0.txt.gz
-2024-04-07 13:24:05,904 INFO:Gzip file detected! Using gzip.open().
-2024-04-07 13:24:05,916 INFO:EPOCH 4: training on 7129 raw words (7129 effective words) took 0.0s, 583975 effective words/s
-2024-04-07 13:24:05,916 INFO:Word2Vec lifecycle event {'msg': 'training on 35645 raw words (35645 effective words) took 0.1s, 459207 effective words/s', 'datetime': '2024-04-07T13:24:05.916547', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'train'}
-2024-04-07 13:24:05,916 INFO:Model trained.
-2024-04-07 13:24:05,916 INFO:Word2Vec lifecycle event {'fname_or_handle': '/home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker/test/test-1/./walks/model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2024-04-07T13:24:05.916627', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'saving'}
-2024-04-07 13:24:05,916 INFO:not storing attribute cum_table
-2024-04-07 13:24:05,917 INFO:saved /home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker/test/test-1/./walks/model
-2024-04-07 13:24:05,917 INFO:KeyedVectors lifecycle event {'fname_or_handle': '/home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker/test/test-1/./walks/model.kv', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2024-04-07T13:24:05.917281', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'saving'}
-2024-04-07 13:24:05,917 INFO:saved /home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker/test/test-1/./walks/model.kv
-2024-04-07 13:24:05,917 INFO:127.0.0.1 - - [07/Apr/2024 13:24:05] "GET /train-word2vec HTTP/1.1" 200 -
-2024-04-07 13:24:05,922 INFO:Classic mode: Writing the full vocabulary.
-2024-04-07 13:24:05,922 INFO:Processing 151 vectors...
-2024-04-07 13:24:05,961 INFO:127.0.0.1 - - [07/Apr/2024 13:24:05] "GET /write-model-as-text-file HTTP/1.1" 200 -
+2024-04-07 14:48:56,284 INFO:[33mPress CTRL+C to quit[0m
+2024-04-07 14:49:05,922 INFO:127.0.0.1 - - [07/Apr/2024 14:49:05] "GET /melt_ml.html HTTP/1.1" 200 -
+2024-04-07 14:49:05,938 INFO:loading KeyedVectors object from /home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker/test/test-1/walks/model.kv
+2024-04-07 14:49:05,943 INFO:KeyedVectors lifecycle event {'fname': '/home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker/test/test-1/walks/model.kv', 'datetime': '2024-04-07T14:49:05.938563', 'gensim': '4.3.0', 'python': '3.9.6 (default, Aug 18 2021, 19:38:01) \n[GCC 7.5.0]', 'platform': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'event': 'loaded'}
+2024-04-07 14:49:05,943 INFO:127.0.0.1 - - [07/Apr/2024 14:49:05] "GET /get-vocabulary-terms HTTP/1.1" 200 -
+2024-04-07 14:49:05,956 INFO:127.0.0.1 - - [07/Apr/2024 14:49:05] "GET /get-vector HTTP/1.1" 200 -
