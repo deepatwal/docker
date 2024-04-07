@@ -29,4 +29,13 @@ jrdf2vec-local \
 -light /data/src/test/resources/sample_dbpedia_entity_file.txt \
 -graph /data/src/test/resources/sample_dbpedia_nt_file.nt
 
+
+# Run Jar to generate vectors:
+
+12. cd /home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker/test
+13. create test folders: test1 and copy the relevant graph files
+14. cd /test1 and run following: java -jar ../../jar/jrdf2vec.jar -graph sample_dbpedia_nt_file.nt
+15. check if the model.kv and vectors.txt file generated successfully.
+
+
   
