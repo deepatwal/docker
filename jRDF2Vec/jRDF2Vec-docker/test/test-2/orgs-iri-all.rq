@@ -1,0 +1,4 @@
+select distinct ?org
+where {
+?org a <http://dbpedia.org/ontology/Organisation>
+} 

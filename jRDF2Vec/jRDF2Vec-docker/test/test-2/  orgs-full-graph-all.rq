@@ -1,0 +1,4 @@
+DESCRIBE ?org
+WHERE {
+    ?org a <http://dbpedia.org/ontology/Organisation>
+}

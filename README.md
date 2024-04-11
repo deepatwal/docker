@@ -13,6 +13,14 @@
         java -jar /app/jrdf2vec.jar -checkInstallation [this is when inside the container]
             or
         docker exec -it jrdf2vec java -jar /app/jrdf2vec.jar -checkInstallation [this is to run when outside the container]
+
+        Note: If error message is this: 
+                Missing Requirements:
+                    python==3.9.6
+            Installation is not ok! [❌]
+            
+            Ignore it as this was added manually to requirements.txt
+
 5. docker cp jrdf2vec:/app/jrdf2vec.jar ${PWD} [this will copy the jar available inside the container to the host machine]
 6. java -jar ../../jar/jrdf2vec.jar -graph sample_dbpedia_nt_file.nt [test the jar]
 7. java -jar ../../jar/jrdf2vec.jar -light sample_dbpedia_entity_file.txt -graph sample_dbpedia_nt_file.nt [test the jar]
@@ -45,3 +53,10 @@ jrdf2vec-local \
 # Analyzing the Embedding Vocabulary
 
 17. java -jar ../../jar/jrdf2vec.jar -analyzeVocab sample_dbpedia_nt_file.nt /walks/model.kv
+
+
+# Tests:
+    - command run from the following directory: /home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker
+    - test-1: java -jar ../../jar/jrdf2vec.jar -graph sample_dbpedia_nt_file.nt
+    - test-2: java -Xmx10G -jar jar/jrdf2vec.jar -light test/test-2/orgs-iri-all.txt -graph test/test-2/orgs-full-graph-all.ttl
+    - test-3: java -Xmx10G -jar jar/jrdf2vec.jar -trainingMode cbow -threads 24 -light test/test-2/orgs-iri-all.txt -graph test/test-2/orgs-full-graph-all.ttl
