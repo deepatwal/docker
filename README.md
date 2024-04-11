@@ -54,9 +54,14 @@ jrdf2vec-local \
 
 17. java -jar ../../jar/jrdf2vec.jar -analyzeVocab sample_dbpedia_nt_file.nt /walks/model.kv
 
+18. run flask app:
+        flask --app python-server run
+    run in debug mode: 
+        flask --debug --app python_server run
 
 # Tests:
     - command run from the following directory: /home/illusion/projects/docker/jRDF2Vec/jRDF2Vec-docker
     - test-1: java -jar ../../jar/jrdf2vec.jar -graph sample_dbpedia_nt_file.nt
     - test-2: java -Xmx10G -jar jar/jrdf2vec.jar -light test/test-2/orgs-iri-all.txt -graph test/test-2/orgs-full-graph-all.ttl
     - test-3: java -Xmx10G -jar jar/jrdf2vec.jar -trainingMode cbow -threads 24 -light test/test-2/orgs-iri-all.txt -graph test/test-2/orgs-full-graph-all.ttl
+    - test-4: java -Xmx10G -jar jar/jrdf2vec.jar -trainingMode cbow -depth 10 -threads 30 -light test/test-2/orgs-iri-all.txt -graph test/test-2/orgs-full-graph-all.ttl
