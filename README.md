@@ -65,3 +65,16 @@ jrdf2vec-local \
     - test-2: java -Xmx10G -jar jar/jrdf2vec.jar -light test/test-2/orgs-iri-all.txt -graph test/test-2/orgs-full-graph-all.ttl
     - test-3: java -Xmx10G -jar jar/jrdf2vec.jar -trainingMode cbow -threads 24 -light test/test-2/orgs-iri-all.txt -graph test/test-2/orgs-full-graph-all.ttl
     - test-4: java -Xmx10G -jar jar/jrdf2vec.jar -trainingMode cbow -depth 10 -threads 30 -light test/test-2/orgs-iri-all.txt -graph test/test-2/orgs-full-graph-all.ttl
+
+# Ollama:
+
+- sudo systemctl stop ollama
+- ollama serve
+
+    NAME                    ID              SIZE    MODIFIED       
+    codellama:13b           9f438cb9cd58    7.4 GB  33 seconds ago
+    codellama:34b           685be00e1532    19 GB   5 minutes ago 
+    codellama:70b           e59b580dfce7    38 GB   17 minutes ago
+    codellama:7b            8fdf8f752f6e    3.8 GB  17 seconds ago
+    codellama:latest        8fdf8f752f6e    3.8 GB  49 minutes ago
+- 
